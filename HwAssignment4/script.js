@@ -1,35 +1,38 @@
-//javascript change box 1
-var redBox = document.querySelector(".redBox");
-var changeBtn1 = document.querySelector(".changeBtn1");
-var colorCheckRed = true;
-changeBtn1.addEventListener("click",function(){
-console.log("click btn1 working");
-
-if(colorCheckRed){
-    colorCheckRed = false;
-    redBox.setAttribute("class","purpleBox");
-}else{
-colorCheckRed = true;
-redBox.setAttribute("class", "redBox")
-}
-})
-
-var blueBox = document.querySelector(".blueBox");
-var changeBtn2 = document.querySelector(".changeBtn2");
-var colorCheckblue = true
-changeBtn2.addEventListener("click", function(){
-    if(colorCheckblue){colorCheckblue=false; blueBox.setAttribute("class", "brownBox")}
-    else{colorCheckblue=true; blueBox.setAttribute("class", "blueBox")}
-})
-var greenBox = document.querySelector(".greenBox");
-var changeBtn3 = document.querySelector(".changeBtn3");
-var colorCheckgreen = true
-changeBtn3.addEventListener("click", function(){
-    if(colorCheckgreen){colorCheckgreen=false; greenBox.setAttribute("class", "blackBox")}
-    else{colorCheckgreen=true; greenBox.setAttribute("class", "greenBox")}
-})
-
-.brownBox{background: brown; border: 5px dashed yellow}
-.blackBox{background:black; border: 5px solid red}
-
-for changebox 2 and changebox 3
+$(document).ready(function(){
+    //The colored boxes
+       $('.changeBtn1').on('click',function() {
+           $('.redBox').css('background-color', 'green');
+   });
+        $('.changeBtn2').on('click',function() {
+           $('.blueBox').css('background-color', 'yellow');
+        });
+      $('.changeBtn3').on('click',function() {
+          $('.greenBox').css('background-color', 'purple');
+    });
+        $('.changeBtnAll').on('click',function() {
+            $('.greenBox, .blueBox, .redBox').css('background-color', 'black');
+        });
+    //Hide boxes
+    $('.hideBtn1').on('click',function() {
+        $('.redBox').hide();
+    });
+    $('.hideBtn2').on('click',function() {
+        $('.blueBox').hide();
+    });
+    $('.hideBtn3').on('click',function() {
+        $('.greenBox').hide();
+    });
+    $('.hideBtnAll').on('click',function() {
+        $('.redBox, .blueBox, .greenBox').hide();
+    });
+    // Reset Colors
+    $('.resetcol').on('click',function() {
+        $('.redBox').css('background-color', 'red');
+        $('.blueBox').css('background-color', 'blue');
+        $('.greenBox').css('background-color', 'green');
+    });
+    })
+    //Show All
+    $('.showAll').on('click',function() {
+        $('.redBox, .blueBox, .greenBox').show();
+    });

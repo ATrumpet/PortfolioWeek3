@@ -6,57 +6,49 @@
     <title>Bootstrap Homework</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href=".css">
-    
 
-    
-    <script src="script.js"></script>
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h6 style="text-align: center;" class="jQueryWorkSheet">Bootstrap and JS/jQuery Worksheet</h6>
 
+    <p class="alignCenter">Bootstrap and JS/jQuery Worksheet</p>
 
-    <h1 style="text-align: center; text-decoration: underline;" class="week3ClassWork">Week 3 Class Work</h1>
+    <h1 class="alignCenter">Week 3 Class Work</h1>
 
     <div class="container">
-        <div class="row bigboxes">
-          <div id="box1" class="col-sm redbox">
-            redbox
-          </div>
-          <div id="box2" class="col-sm bluebox">
-            bluebox
-          </div>
-          <div id="box3" class="col-sm greenbox">
-            greenbox
-          </div>
+        <div class="row bigBoxes">
+            <div class="col redBox"></div>
+            <div class="col blueBox"></div>
+            <div class="col greenBox"></div>
         </div>
-      </div>
+    </div>
 
-      <h3 style="text-align: center; text-decoration: underline;" class="changeButtons">Change Buttons</h3>
+    <h3 class="alignCenter blueTxt">Change Buttons</h3>
 
-      <div class="container">
-        <div class="row row-cols-4">
-          <div class="col">Change Box 1</div>
-          <div class="col">Change Box 2</div>
-          <div class="col">Change Box 3</div>
-          <div class="col">Change Box 4</div>
+    <div class="container">
+        <div class="row changeButtons">
+            <div class="col "><span class="changeBtn1">Change Box 1</span></div>
+            <div class="col "><span class="changeBtn2">Change Box 2</span></div>
+            <div class="col "><span class="changeBtn3">Change Box 3</span></div>
+            <div class="col "><span class="changeBtnAll">Change All</span></div>
+
         </div>
-      </div>
+    </div>
 
-      <h6 style="text-align: center; text-decoration: underline;" class="hideButtons">Hide Buttons</h6>
+    <h6 class="alignCenter blueTxt">Hide Buttons</h6>
 
-      <div class="container">
-        <div class="row row-cols-4">
-          <div class="col">Hide Box 1 </div>
-          <div class="col">Hide Box 2</div>
-          <div class="col">Hide Box 3</div>
-          <div class="col">Hide Box 4</div>
+    <div class="container">
+        <div class="row hideButtons">
+            <div class="col "><span class="hideBtn1">Hide Box 1</span></div>
+            <div class="col "><span class="hideBtn2">Hide Box 2</span></div>
+            <div class="col "><span class="hideBtn3">Hide Box 3</span></div>
+            <div class="col "><span class="hideBtnAll">Hide All</span></div>
+
         </div>
-      </div>
-
-      
-
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
 </body>
+</html>
